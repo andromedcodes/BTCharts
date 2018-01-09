@@ -1,0 +1,45 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+ext {
+
+    SupportLibrary = "26.1.0"
+    ConstraintLayout = "1.0.2"
+    ButterKnife = "8.8.1"
+    ButterKnifeCompiler = "8.8.1"
+    LeakCanary = "1.5.4"
+    SdpUnit = "1.0.5"
+    SspUnit = "1.0.5"
+
+    Junit = "4.12"
+    AndroidTestRunner = "1.0.1"
+    Espresso = "3.0.1"
+
+    presentationDependencies = [
+            SupportLibrary     : "com.android.support:appcompat-v7:${SupportLibrary}",
+            SupportLibraryV4   : "com.android.support:support-v4:${SupportLibrary}",
+            ConstraintLayout   : "com.android.support.constraint:constraint-layout:${ConstraintLayout}",
+            //AndroidCharts      : "com.github.PhilJay:MPAndroidChart:${AndroidCharts}",
+            ButterKnife        : "com.jakewharton:butterknife:${ButterKnife}",
+            ButterKnifeCompiler: "com.jakewharton:butterknife-compiler:${ButterKnifeCompiler}",
+            LeakCanary         : "com.squareup.leakcanary:leakcanary-android:${LeakCanary}",
+            SdpUnits           : "com.intuit.sdp:sdp-android:${SdpUnit}",
+            SspUnits           : "com.intuit.ssp:ssp-android:${SspUnit}",
+    ]
+    domain = []
+    data = []
+
+    testDependencies = [
+            Junit: "junit:junit:${Junit}"
+    ]
+
+    instrumentationDependencies = [
+            AndroidTestRunner: "com.android.support.test:runner:${AndroidTestRunner}",
+            Espresso         : "com.android.support.test.espresso:espresso-core:${Espresso}",
+    ]
+}
