@@ -15,6 +15,7 @@ ext {
     LeakCanary = "1.5.4"
     SdpUnit = "1.0.5"
     SspUnit = "1.0.5"
+    AndroidCharts = "v3.0.3"
 
     Junit = "4.12"
     AndroidTestRunner = "1.0.1"
@@ -23,8 +24,9 @@ ext {
     presentationDependencies = [
             SupportLibrary     : "com.android.support:appcompat-v7:${SupportLibrary}",
             SupportLibraryV4   : "com.android.support:support-v4:${SupportLibrary}",
+            SupportDesign      : "com.android.support:design:${SupportLibrary}",
             ConstraintLayout   : "com.android.support.constraint:constraint-layout:${ConstraintLayout}",
-            //AndroidCharts      : "com.github.PhilJay:MPAndroidChart:${AndroidCharts}",
+            AndroidCharts      : "com.github.PhilJay:MPAndroidChart:${AndroidCharts}",
             ButterKnife        : "com.jakewharton:butterknife:${ButterKnife}",
             ButterKnifeCompiler: "com.jakewharton:butterknife-compiler:${ButterKnifeCompiler}",
             LeakCanary         : "com.squareup.leakcanary:leakcanary-android:${LeakCanary}",

@@ -26,8 +26,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation presentationDependencies.SupportLibrary
+    implementation presentationDependencies.SupportLibraryV4
+    implementation presentationDependencies.SupportDesign
     implementation presentationDependencies.SdpUnits
     implementation presentationDependencies.SspUnits
+    implementation presentationDependencies.ConstraintLayout
+    implementation presentationDependencies.AndroidCharts
     testImplementation testDependencies.Junit
     androidTestImplementation instrumentationDependencies.AndroidTestRunner
     androidTestImplementation instrumentationDependencies.Espresso

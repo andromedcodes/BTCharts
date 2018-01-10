@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_16sdp"
+    android:background="@color/screenBackground">
+
+    <Button
+        android:id="@+id/btViewChart"
+        android:layout_above="@id/btDonate"
+        android:text="@string/price_chart"
+        style="@style/FeatureBtn"/>
+
+    <Button
+        android:id="@+id/btDonate"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/donate"
+        android:layout_alignParentBottom="true"
+        style="@style/FeatureBtn"/>
+
+    <TextView
+        android:id="@+id/tvBtcPrice"
+        android:layout_centerInParent="true"
+        android:text="@string/current_price"
+        android:fontFamily="@font/poppins"
+        style="@style/HeaderText"/>
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_above="@id/tvBtcPrice"
+        android:text="@string/current_btc_price_is"
+        android:fontFamily="@font/poppins_light"
+        style="@style/HeaderText"/>
+
+</RelativeLayout>

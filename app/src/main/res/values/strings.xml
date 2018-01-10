@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BitChart</string>
+    <string name="current_price">$ 107.50</string>
+    <string name="current_btc_price_is">Current BTC price is</string>
+    <string name="price_chart">Price chart</string>
+    <string name="donate">Donate</string>
 </resources>
